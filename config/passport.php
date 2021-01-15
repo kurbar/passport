@@ -19,6 +19,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | JWT decoding
+    |--------------------------------------------------------------------------
+    |
+    | By default, Passport will decode JWT tokens using the HS256 algorithm for
+    | TokenGuard::decodeJwtTokenCookie. If you need the ability to decode
+    | tokens of other algorithms (e.g. PasswordGrant RS256), you can add other
+    | support algorithms to the array.
+    |
+    */
+    'decode_allowed_algos' => ['HS256'],
+
+    /*
+    |--------------------------------------------------------------------------
     | Client UUIDs
     |--------------------------------------------------------------------------
     |
